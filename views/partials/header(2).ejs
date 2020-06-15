@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+        
+        
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script src="https://kit.fontawesome.com/b99e61796e.js" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/gijgo@1.8.1/combined/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/gijgo@1.8.1/combined/css/gijgo.min.js" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+        <script type="text/javascript"  src="js/lightbox-plus-jquery.min.js"></script>
+       
+
+
+
+       
+        <link rel="stylesheet" type="text/css" href="resource/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="resource/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="mstyle.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Footprints of Kolkata</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168890101-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-168890101-1');
+        </script>
+
+
+    </head>
+    <body id="page-top" class="no-scroll-y">
+      <div class="title" > 
+      <section class="preloader">
+            <div id="overlay">
+      <div id="loader" class="loader">
+         <div class="loader-inner">
+            <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+         </div>
+      </div>
+      <script>
+       $(document).ready(preloderFunction());
+      function preloderFunction() {
+      setTimeout(function() {
+      
+      // Force Main page to show from the Start(Top) even if user scroll down on preloader - Primary (Before showing content)
+      
+      // Model 1 - Fast            
+      document.getElementById("page-top").scrollIntoView();
+      
+      // Model 2 - Smooth             
+      // document.getElementById("page-top").scrollIntoView({behavior: 'smooth'});
+      // Removing Preloader:
+      
+      $('#loader').addClass('loaded');  
+      // Once the preloader has finished, the scroll appears 
+      $('body').removeClass('no-scroll-y');
+      
+      if ($('#loader').hasClass('loaded')) {
+          // It is so that once the preloader is gone, the entire preloader section will removed
+          $('#overlay').delay(1000).queue(function() {
+              $(this).remove();
+              
+              // If you want to do something after removing preloader:
+              afterLoad();
+              
+          });
+      }
+      }, 3000);
+      }
+      
+      
+      
+      function afterLoad() {
+      // After Load function body!
+      }
+      
+          
+      </script>
+      </div>
+        </section>
+        
+      
+        <nav class="navbar  navbar-expand-lg  bg-dark">
+            <a class="navbar-brand " href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-chevron-circle-down dropdown"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/team" >Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/contact" >Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        

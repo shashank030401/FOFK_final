@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width , initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="https://kit.fontawesome.com/b99e61796e.js" crossorigin="anonymous"></script>      
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+      
+       <script src="https://kit.fontawesome.com/b99e61796e.js" crossorigin="anonymous"></script>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    </head>
+         
+    <body id="page-top" class="no-scroll-y">
+      <div class="title" > 
+      <section class="preloader">
+            <div id="overlay">
+      <div id="loader" class="loader">
+         <div class="loader-inner">
+            <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+         </div>
+      </div>
+      <script>
+       $(document).ready(preloderFunction());
+      function preloderFunction() {
+      setTimeout(function() {
+      
+      // Force Main page to show from the Start(Top) even if user scroll down on preloader - Primary (Before showing content)
+      
+      // Model 1 - Fast            
+      document.getElementById("page-top").scrollIntoView();
+      
+      // Model 2 - Smooth             
+      // document.getElementById("page-top").scrollIntoView({behavior: 'smooth'});
+      // Removing Preloader:
+      
+      $('#loader').addClass('loaded');  
+      // Once the preloader has finished, the scroll appears 
+      $('body').removeClass('no-scroll-y');
+      
+      if ($('#loader').hasClass('loaded')) {
+          // It is so that once the preloader is gone, the entire preloader section will removed
+          $('#overlay').delay(1000).queue(function() {
+              $(this).remove();
+              
+              // If you want to do something after removing preloader:
+              afterLoad();
+              
+          });
+      }
+      }, 3000);
+      }
+      
+      
+      
+      function afterLoad() {
+      // After Load function body!
+      }
+      
+          
+      </script>
+      </div>
+        </section>
+      <nav class="navbar navbar-expand-lg  bg-dark">
+        <a class="navbar-brand " href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-chevron-circle-down dropdown"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/team" >Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/contact" >Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="team">
+        <div class="container">
+              <h1 id="Team">OUR TEAM</h1>
+              <div class="row">
+                <div class="team-member  col-lg-3 col-md-6 col-sm-6">
+                    <div class="image">
+                        <img src="resource/DSC_0117.JPG">
+                    </div>    
+                  <h2>Mayukh Bagchi</h2>
+                    <h3 class="role">Front-end web developer</h3>
+                    <ul>
+                       <li><a href="https://www.facebook.com/mayukh.bagchi.1" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                        <li><a href="https://www.instagram.com/r.e.a.p.e.r_5/" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/mayukhbagchi/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                    </ul>
+                </div>
+                  
+                 
+                 <div class="team-member col-lg-3 col-md-6 col-sm-6">
+                     <div class="image">
+                         <img src="resource/jit.jpeg">
+                     </div>
+                     <h2> Jit Ghosh</h2>
+                       <h3 class="role">Front-end web developer</h3>
+                      <ul>
+                       <li><a href="https://www.facebook.com/jitkumar.ghosh" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                        <li><a href="https://www.instagram.com/jitk48/" target="_blank" ><i class="fa fa-instagram"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/jit-kumar-ghosh-9747931ab/" target="_blank" ><i class="fa fa-linkedin"></i></a></li> 
+                       
+                    </ul>
+                </div>
+                  
+                  
+                 <div class="team-member col-lg-3 col-md-6 col-sm-6">
+                     <div class="image">
+                           <img src="resource/shashank.jpeg">
+                     </div>
+                     <h2>N Sai Shashank</h2>
+                       <h3 class="role">MERNstack Developer</h3>
+                      <ul>
+                       <li><a href="https://www.facebook.com/saishashank00" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                        <li><a href="https://www.instagram.com/soishoshank/" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/n-sai-shashank-58034a159/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                    </ul>
+                </div> 
+                
+                  
+                <div class="team-member col-lg-3 col-md-6 col-sm-6">
+                      <div class="image">
+                           <img src="resource/WhatsApp%20Image%202020-06-06%20at%2013.11.47.jpeg">
+                    </div>
+                     <h2> Madhumanti Gupta</h2>
+                      <h3 class="role">Front-end Web Developer</h3>
+                     <ul>
+                       <li><a href="https://www.facebook.com/madhumanti.gupta.31" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                        <li><a href="https://www.instagram.com/guptamadhumanti/" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/madhumanti-gupta-6503ab184/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                    </ul>
+                </div>
+                
+                  
+                <div class="team-member col-lg-3 col-md-6 col-sm-6">
+                      <div class="image">
+                            <img src="resource/ami.jpeg">
+                    </div>
+                    <h2> Manjulika  Mondal</h2>
+                      <h3 class="role">UI Designer</h3>
+                     <ul>
+                       <li><a href="https://www.facebook.com/manjulika.mondal.3" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                        <li><a href="https://www.instagram.com/manjulimondal/" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/manjulika-mondal-2286631a7/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+    </body>
+</html>

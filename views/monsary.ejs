@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>foot prints of kolkata</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/b99e61796e.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+        <script type="text/javascript"  src="js/lightbox-plus-jquery.min.js"></script>
+    </head>
+    <body id="page-top" class="no-scroll-y">
+      <div class="title" > 
+      <section class="preloader">
+            <div id="overlay">
+      <div id="loader" class="loader">
+         <div class="loader-inner">
+            <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+         </div>
+      </div>
+      <script>
+       $(document).ready(preloderFunction());
+      function preloderFunction() {
+      setTimeout(function() {
+      
+      // Force Main page to show from the Start(Top) even if user scroll down on preloader - Primary (Before showing content)
+      
+      // Model 1 - Fast            
+      document.getElementById("page-top").scrollIntoView();
+      
+      // Model 2 - Smooth             
+      // document.getElementById("page-top").scrollIntoView({behavior: 'smooth'});
+      // Removing Preloader:
+      
+      $('#loader').addClass('loaded');  
+      // Once the preloader has finished, the scroll appears 
+      $('body').removeClass('no-scroll-y');
+      
+      if ($('#loader').hasClass('loaded')) {
+          // It is so that once the preloader is gone, the entire preloader section will removed
+          $('#overlay').delay(1000).queue(function() {
+              $(this).remove();
+              
+              // If you want to do something after removing preloader:
+              afterLoad();
+              
+          });
+      }
+      }, 3000);
+      }
+      
+      
+      
+      function afterLoad() {
+      // After Load function body!
+      }
+      
+          
+      </script>
+      </div>
+        </section>
+        
+              
+    <nav class="navbar navbar-expand-lg  bg-dark">
+        <a class="navbar-brand " href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-chevron-circle-down dropdown"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="/team" >Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/contact" >Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <h1 class="heading">KOLKATA THROUGH LENS</h1>
+	  <main class="container">
+		<div><a href="images/9%20(1).jpg" data-lightbox="mygallery" data-title="Pic credits to @_siddharth_photography_"><img src="images/9%20(1).jpg" alt=""></a></div>
+        <div class="vertical"><a href="images/2.jpg" data-lightbox="mygallery" data-title="credits:@i.msurit_official"><img src="images/2.jpg" alt=""></a></div>
+        <div class="horizontal"><a href="images/9%20(15).jpg" data-lightbox="mygallery" data-title="credits:@stellersen"><img src="images/9%20(15).jpg"alt=""></a></div>
+        <div><a href="images/9%20(4).jpg" data-lightbox="mygallery" data-title="credits:@the_fickle_mind"><img src="images/9%20(4).jpg" alt=""></a></div>
+        <div><a href="images/9(5).jpg" data-lightbox="mygallery" data-title="credits:@meet_yourself"><img src="images/9(5).jpg" alt=""></a></div>
+        <div class="big"><a href="images/9(21).jpg" data-lightbox="mygallery" data-title="credits:@sam_photographer"><img src="images/9(21).jpg" alt=""></a></div>
+        <div><a href="images/9(19).jpg" data-lightbox="mygallery" data-title="credits:@kolkatadelites"><img src="images/9(19).jpg" alt=""></a></div>
+        <div class="vertical"><a href="images/8.jpg" data-lightbox="mygallery" data-title="credits:@seshadri.sarkar"><img src="images/8.jpg" alt=""></a></div>
+        <div><a href="images/9(20).jpg" data-lightbox="mygallery" data-title="credits:@photosticlife"><img src="images/9(20).jpg"alt=""></a></div>
+        <div class="horizontal"><a href="images/9%20(10).jpg" data-lightbox="mygallery" data-title="credits:@yourfoodlab"><img src="images/9%20(10).jpg" alt=""></a></div>
+        <div><a href="images/5.jpg" data-lightbox="mygallery" data-title="credits:@photographer_rony"><img src="images/5.jpg" alt=""></a></div>
+        <div class="big"><a href="images/7.jpg" data-lightbox="mygallery" data-title="credits:@photosticlife"><img src="images/7.jpg" alt=""></a></div>
+        <div><a href="images/9%20(13).jpg" data-lightbox="mygallery" data-title="credits:@av.jit.bis_kolkata"><img src="images/9%20(13).jpg" alt=""></a></div>
+        <div class="horizontal"><a href="images/9%20(14).jpg" data-lightbox="mygallery" data-title="credits:@ajit_k_majhi"><img src="images/9%20(14).jpg" alt=""></a></div>
+        <div><a href="images/9(22).jpeg" data-lightbox="mygallery" data-title="credits:@savorytales"><img src="images/9(22).jpeg" alt=""></a></div>
+        <div class="big"><a href="images/9%20(16).jpg" data-lightbox="mygallery" data-title="credits:@vision_of_veiwer"><img src="images/9%20(16).jpg" alt=""></a></div>
+        <div><a href="images/9%20(17).jpg" data-lightbox="mygallery" data-title="credits:@prithas_passion"><img src="images/9%20(17).jpg" alt=""></a></div>
+        <div class="vertical"><a href="images/9(23).jpeg" data-lightbox="mygallery" data-title="credits:@towering_goals"><img src="images/9(23).jpeg" alt=""></a></div>
+         <div><a href="images/9%20(18).jpg" data-lightbox="mygallery" data-title="credits:@the_lens_vision"><img src="images/9%20(18).jpg" alt=""></a></div>
+    <div><a href="images/9(24).jpeg" data-lightbox="mygallery" data-title="credits:@i_n_d__r__a"><img src="images/9(24).jpeg" alt=""></a></div>
+        <div><a href="images/9%20(6).jpg" data-lightbox="mygallery" data-title="credits:@kolkatadelites"><img src="images/9%20(6).jpg" alt=""></a></div>
+	</main>
+ 
+</body>
+  </html>

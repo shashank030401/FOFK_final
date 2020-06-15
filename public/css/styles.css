@@ -1,0 +1,233 @@
+.team{
+    margin :  0;
+    color: white;
+    background-color:  #1b1b1d;
+}
+
+.nav-link{
+    color : #f1c40f
+}
+.nav-item  :hover{
+  color: white;
+}
+
+.navbar-brand{
+    color : #f1c40f;
+}
+.navbar a:hover{
+    color : white;
+}
+/* .navbar-toggler-icon{
+    outline-color : #f1c40f
+} */
+
+.dropdown{
+    color : #f1c40f;
+}
+.dropdown:checked{
+  color: #584804
+}
+/*------------------heading -------------------*/
+
+#Team{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+     color:  #ffc400;
+    padding-bottom: 10px;
+    padding-top: 30px;
+
+}
+#Team:after{
+    content: " ";
+    background: #ffc400;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto; 
+}
+
+/*------------------positioning -------------------*/
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.container img{
+    height: 140px;
+    width: 140px;
+    border-radius: 900px;
+    position: relative;
+    box-shadow: 1px 1px 10px black ;
+    
+}
+.team-member{
+    display: block;
+   margin: 25px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding-top: 20px;
+    background-image: linear-gradient( #f7d695 1px ,#ee8972  );
+    box-shadow: 10px 10px 20px #1b1b1a;
+    border-radius: 10px;
+}
+@media screen and (max-width : 600px){
+    .team-member{
+        display: fixed;
+        margin: 25px;
+         width: 300px;
+         height: 400px;
+         text-align: center;
+         padding-top: 20px;
+         background-image: linear-gradient( #f7d695 1px ,#ee8972  );
+         box-shadow: 10px 10px 20px #1b1b1a;
+         border-radius: 10px;
+    }
+}
+.team-member:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+
+/*------------------edits -------------------*/
+h2{
+    margin-top: 25px;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 640;
+}
+h3{
+    font-size: 18px;
+    color: #fffed2;
+}
+h3:after{
+    content: " ";
+    background: #fffed2;
+    display: block;
+    height: 1.5px;
+    width: 100px;
+    margin: 10px auto; 
+}
+
+.team-member ul{
+    list-style: none;
+    padding: 0;
+    
+}
+.team-member li{
+    list-style: none;
+    display: inline-block;
+    font-size: 30px;
+    margin:5px;
+    width: 40px;
+    height: 40px;
+}
+.team-member i{
+    color: white;
+}
+.team-member i:active
+.team-member i:hover{
+    color: white;
+}
+
+
+
+
+
+.loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    transition: 0.5s;
+   
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+		spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

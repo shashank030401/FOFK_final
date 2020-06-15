@@ -1,0 +1,40 @@
+*{
+   margin: 0;
+    padding: 0;
+}
+
+#madhu{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+    
+}
+.gallery-box img{
+    width: 100%;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+    height: 300px;
+    transition: transform 0.5s,opacity 0.5s;
+    opacity: 0.9;
+    
+}
+.gallery-box img:hover{
+    transform: scale(1.1);
+     opacity: 1;
+    border:2px solid white;
+    
+}
+.gallery-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+.gallery{
+    background-color: #000;
+}
+.gallery-box h4{
+    top:85%;
+    position: absolute;
+    color: #b5b1b1;
+    font: Lato;
+}

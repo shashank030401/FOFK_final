@@ -1,0 +1,21 @@
+<%- include("partials/header(2)") -%>
+    <div class="contact-section">
+        <h1 id="head">Contact Us</h1>
+        <div class="form-container">
+            <form class="contact-form" action="/contact" method="post" >
+                <input class ="form-data" type="text" name = "name" placeholder="Enter your name" required >
+                <input class ="form-data" type="email" name="email"  placeholder="Enter your email" required>
+                <textarea class ="form-data" name="question"  cols="30" rows="10" placeholder="Write here" required></textarea>
+                <button type="submit" class="contact-form-btn">Submit</button>
+                 <div class = "ext-links">
+                    <p> 
+                        <a href="https://www.facebook.com/FOOTPRINTSKOLKATA"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="http://Instagram.com/footprintsofkolkata"><i class="fa fa-instagram fa-2x"></i></a>  
+                        <!-- <a href="footprintsofkolkata@gmail.com"><i class="fa fa-envelope"></i> </a>  -->
+                      </p>
+                 </div>   
+            </form>
+         </div>
+    </div>
+</body>
+</html>
